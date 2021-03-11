@@ -1,0 +1,176 @@
+{
+    "Smug": {
+        "Image": "smug.png",
+        "Default Preset": "",
+        "Pieces": {
+            "Root": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "Main Body": [
+                8,
+                10,
+                810,
+                1065
+            ],
+            "Eyes Open": [
+                828,
+                4,
+                1075,
+                254
+            ],
+            "Eyes Closed": [
+                828,
+                260,
+                1075,
+                510
+            ],
+            "New Piece": [
+                828,
+                516,
+                1075,
+                764
+            ]
+        },
+        "Parts": {
+            "Root": [
+                "None",
+                "Root",
+                0,
+                0,
+                0,
+                1.0,
+                1.0,
+                0,
+                0,
+                0,
+                1.0,
+                "FFFFFF",
+                0.0,
+                "MULTIPLY"
+            ],
+            "Base": [
+                "Root",
+                "Main Body",
+                0,
+                0,
+                0,
+                1.0,
+                1.0,
+                0,
+                0,
+                0,
+                1.0,
+                "FFFFFF",
+                0.0,
+                "MULTIPLY"
+            ],
+            "Face": [
+                "None",
+                "Eyes Open",
+                0,
+                0,
+                0,
+                1.0,
+                1.0,
+                0,
+                0,
+                0,
+                1.0,
+                "FFFFFF",
+                0.0,
+                "MULTIPLY"
+            ]
+        },
+        "Presets": {}
+    },
+    "Neutral": {
+        "Image": "neutral.png",
+        "Default Preset": "",
+        "Pieces": {
+            "Root": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "Main Body": [
+                10,
+                10,
+                520,
+                1064
+            ],
+            "Eyes Open": [
+                548,
+                4,
+                796,
+                254
+            ],
+            "Eyes Closed": [
+                548,
+                260,
+                796,
+                510
+            ],
+            "Eyes Shine": [
+                548,
+                516,
+                796,
+                766
+            ]
+        },
+        "Parts": {
+            "Root": [
+                "None",
+                "Root",
+                0,
+                0,
+                0,
+                1.0,
+                1.0,
+                0,
+                0,
+                0,
+                1.0,
+                "FFFFFF",
+                0.0,
+                "MULTIPLY"
+            ],
+            "Body": [
+                "Root",
+                "Main Body",
+                0,
+                0,
+                0,
+                1.0,
+                1.0,
+                0,
+                0,
+                0,
+                1.0,
+                "FFFFFF",
+                0.0,
+                "MULTIPLY"
+            ],
+            "Eyes": [
+                "Body",
+                "Eyes Open",
+                0,
+                0,
+                0,
+                1.0,
+                1.0,
+                0,
+                0,
+                0,
+                1.0,
+                "FFFFFF",
+                0.0,
+                "MULTIPLY"
+            ]
+        },
+        "Presets": {}
+    }
+}

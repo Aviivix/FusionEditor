@@ -1,0 +1,198 @@
+{
+	"Sheets": {
+		"Neutral": {
+	        "Image": "Amitie (PPT2)/manzai.png",
+			"Pieces": {
+				"Root": [
+					0,
+					0,
+					0,
+					0
+				],
+				"Neutral Base": [
+					6,
+					7,
+					388,
+					712
+				],
+				"Neutral Blushy Eyes": [
+					415,
+					37,
+					560,
+					128
+				],
+				"Neutral Closed Eyes": [
+					415,
+					132,
+					560,
+					223
+				],
+				"Neutral Open Eyes": [
+					415,
+					225,
+					560,
+					316
+				],
+				"Neutral Frown": [
+					508,
+					316,
+					559,
+					358
+				],
+				"Neutral Open Mouth": [
+					455,
+					316,
+					506,
+					358
+				],
+				"Neutral Smile": [
+					401,
+					316,
+					452,
+					358
+				]
+			}
+		}
+	},
+	"Models": {
+		"Neutral": {
+			"Sheets": [
+				[ "Amitie (PPT2)", "Neutral" ]
+			],
+			"Default Preset": "Blink",
+			"Parts": {
+				"Root": [
+					"None",
+					"Root",
+					400,
+					-140,
+					0,
+					1.0,
+					1.0,
+					0,
+					0,
+					0,
+					1.0,
+					"FFFFFF",
+					0.0,
+					"MULTIPLY"
+				],
+				"Base": [
+					"Root",
+					"Neutral Base",
+					0,
+					0,
+					0,
+					1.0,
+					1.0,
+					0,
+					200,
+					0,
+					1.0,
+					"FFFFFF",
+					0.0,
+					"MULTIPLY"
+				],
+				"Eyes": [
+					"Base",
+					"Neutral Open Eyes",
+					101,
+					515,
+					10,
+					1.0,
+					1.0,
+					0,
+					0,
+					0,
+					1.0,
+					"FFFFFF",
+					0.0,
+					"MULTIPLY"
+				],
+				"Mouth": [
+					"Base",
+					"Neutral Smile",
+					154,
+					481,
+					15,
+					1.0,
+					1.0,
+					0,
+					0,
+					0,
+					1.0,
+					"FFFFFF",
+					0.0,
+					"MULTIPLY"
+				]
+			},
+			"Presets": {
+				"Blink": {
+					"Root": {
+						"X Pos": {
+							"Data": {
+								"Loop Point": 0
+							},
+							"Frames": [
+								{
+									"Frame": 0,
+									"Modifier": 300,
+									"Motion": "quart in"
+								},
+								{
+									"Frame": 59,
+									"Modifier": 1000,
+									"Motion": "quart in"
+								},
+								{
+									"Frame": 119,
+									"Modifier": 300,
+									"Motion": "quart in"
+								},
+								{
+									"Frame": 144,
+									"Modifier": 800,
+									"Motion": "sine"
+								},
+								{
+									"Frame": 179,
+									"Modifier": 300,
+									"Motion": "sine"
+								}
+							]
+						}
+					},
+					"Eyes": {
+						"Piece": {
+							"Data": {
+								"Loop Point": 0
+							},
+							"Frames": [
+								{
+									"Frame": 0,
+									"Modifier": "Neutral Open Eyes",
+									"Motion": "Instant"
+								},
+								{
+									"Frame": 10,
+									"Modifier": "Neutral Closed Eyes",
+									"Motion": "Instant"
+								},
+								{
+									"Frame": 12,
+									"Modifier": "Neutral Open Eyes",
+									"Motion": "Instant"
+								},
+								{
+									"Frame": 119,
+									"Modifier": "Neutral Open Eyes",
+									"Motion": "Instant"
+								}
+							]
+						}
+					}
+				}
+			}
+		}
+	}
+}

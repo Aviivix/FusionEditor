@@ -1,0 +1,83 @@
+{
+    "Neutral": {
+        "Image": "uiTENPEX_adv_mz_chara_lem_01.png",
+        "Default Preset": "",
+        "Pieces": {
+            "Root": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "Body": [
+                16,
+                4,
+                700,
+                1050
+            ],
+            "Smile": [
+                768,
+                0,
+                1024,
+                256
+            ],
+            "Concern": [
+                768,
+                256,
+                1024,
+                512
+            ]
+        },
+        "Parts": {
+            "Root": [
+                "None",
+                "Root",
+                0,
+                0,
+                0,
+                1.0,
+                1.0,
+                0,
+                0,
+                0,
+                1.0,
+                "FFFFFF",
+                0.0,
+                "MULTIPLY"
+            ],
+            "Body": [
+                "Root",
+                "Body",
+                0,
+                0,
+                0,
+                1.0,
+                1.0,
+                0,
+                0,
+                0,
+                1.0,
+                "FFFFFF",
+                0.0,
+                "MULTIPLY"
+            ],
+            "Face": [
+                "Body",
+                "Smile",
+                0,
+                0,
+                0,
+                1.0,
+                1.0,
+                0,
+                0,
+                0,
+                1.0,
+                "FFFFFF",
+                0.0,
+                "MULTIPLY"
+            ]
+        },
+        "Presets": {}
+    }
+}

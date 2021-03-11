@@ -1,0 +1,50 @@
+{
+	"Frames": [
+		{
+			"ID": 0,
+			"Background": "Magic School Exterior (PPT2)",
+			"Music": "It's a Peaceful Day in Suzuran.wav",
+			"UI": {},
+			"Entities": {
+				"Sig (Left) (PPT2)": {
+					"Model": "Neutral",
+					"Animation": {
+						"Eyes": {
+							"Piece": [
+								{
+									"Frame": 10,
+									"Modifier": "Neu Closed Eyes",
+									"Motion": [ "Instant" ]
+								},
+								{
+									"Frame": 12,
+									"Modifier": "Neu Open Eyes",
+									"Motion": [ "Instant" ]
+								}
+							]
+						},
+						"Root": {
+							"Position": [
+								{
+									"Frame": 0,
+									"Modifier": [ -600, -100 ],
+									"Motion": [ "Instant" ]
+								},
+								{
+									"Frame": 11,
+									"Modifier": [ 0, -100 ],
+									"Motion": [ "Linear" ]
+								},
+								{
+									"Frame": 23,
+									"Modifier": [ 0, 0 ],
+									"Motion": [ "Linear" ]
+								}
+							]
+						}
+					}
+				}
+			}
+		}
+	]
+}

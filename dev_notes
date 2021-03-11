@@ -1,0 +1,60 @@
+Entity Variables, all self.
+
+ENTITY
+
+Variable                Type                Contains
+------------------------------------------------------------------------------------
+entity_name             Str                 Name of the current entity.
+data_json               Dict                Transcription of data.json data
+list_backgrounds        List                List of folders in assets/backgrounds/
+list_entities           List                List of folders in assets/entities/
+
+CUTTER
+
+Variable                Type                Contains
+------------------------------------------------------------------------------------
+-- Inherit entity_name and data_json on load_entity
+spritesheet_image       Image               Image to be used for the spritesheet.
+current_spritesheet     Str                 Filename of the current spritesheet.
+current_sheet           Str                 Name of the currently loaded model.
+list_sheets             List                List of models.
+list_sheetfiles         List                List of PNG files in the assets/entities/[name] folder.
+rendered_shapes         List of Dicts       Dicts of the data around rendered pieces.
+                                                Name: Name of the piece
+                                                Redraw: Bool of whether to draw the box
+                                                Coords: Coords of the upper left and lower right
+
+MODELER
+
+Variable                Type                Contains
+------------------------------------------------------------------------------------
+-- Inherit entity_name and data_json on load_entity
+spritesheet_image       Image               Image to be used for the spritesheet.
+current_spritesheet     Str                 Filename of the current spritesheet.
+current_sheet           Str                 Name of the currently loaded model.
+list_backgrounds        List                List of folders in assets/backgrounds/
+part_entries            List                List of part entries (each a list)
+piece_entries           List                List of piece entries (each a list)
+
+
+        if p[12] in self.data_json[self.currentmodel]['Parts']:
+            while rooting:
+                for n in self.part_positions:
+                    if n[0] == checking:
+                        parents.insert(0, [n[2], n[3], n[4], n[5], n[6], n[7], n[8], n[9]])
+                        if n[12] in self.data_json[self.currentmodel]['Parts']:
+                            checking = n[12]
+                        else:
+                            rooting = False
+        for i in parents:
+            # Coords | Position | Pivots | Scale | Rotation | Alpha | RGB | Tint
+            # Temporarily setting the origin to the pivot to scale and rotate
+            context.translate(i[2][0], i[2][1] + (i[0][3] - i[0][1]))
+            context.scale(i[3][0], i[3][1])
+            context.rotate(i[4])
+            context.translate(-i[2][0], -i[2][1] + (i[0][3] - i[0][1]))
+            # Misc transformations
+            alpha = alpha * i[7]
+            rgb = [rgb[0] * i[8][0], rgb[1] * i[8][1], rgb[2] * i[8][2]]
+            tint += i[9]
+            operator = i[10]

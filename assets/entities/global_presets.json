@@ -1,0 +1,16 @@
+{
+	"Slide In": {
+		"Position": [
+			{
+				"Frame": 0,
+				"Modifier": [ -400, 100 ],
+				"Motion": [ "Linear" ]
+			},
+			{
+				"Frame": 10,
+				"Modifier": [ 0, 0 ],
+				"Motion": [ "Quadratic" ]
+			}
+		]
+	}
+}

@@ -1,0 +1,55 @@
+{
+	"Neutral": {
+		"Image": "Amitie (PPT2)/manzai.png",
+		"Pieces": {
+			"Root": [
+				0,
+				0,
+				0,
+				0
+			],
+			"Neutral Base": [
+				6,
+				7,
+				388,
+				712
+			],
+			"Neutral Blushy Eyes": [
+				415,
+				37,
+				560,
+				128
+			],
+			"Neutral Closed Eyes": [
+				415,
+				132,
+				560,
+				223
+			],
+			"Neutral Open Eyes": [
+				415,
+				225,
+				560,
+				316
+			],
+			"Neutral Frown": [
+				508,
+				316,
+				559,
+				358
+			],
+			"Neutral Open Mouth": [
+				455,
+				316,
+				506,
+				358
+			],
+			"Neutral Smile": [
+				401,
+				316,
+				452,
+				358
+			]
+		}
+	}
+}
